@@ -1,0 +1,24 @@
+{
+  "name": "spiku-3.0",
+  "version": "1.0.0",
+  "description": "Chatting application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "test",
+    "application",
+    "playstore"
+  ],
+  "author": "sumit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "*",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.2",
+    "socketio-file-upload": "^0.7.3"
+  }
+}
