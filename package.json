@@ -14,7 +14,9 @@
   ],
   "author": "sumit",
   "license": "ISC",
+  
   "dependencies": {
+    "normalize-url": ">=4.5.1",
     "express": "^4.17.1",
     "fs": "*",
     "nodemon": "^2.0.7",
