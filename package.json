@@ -17,6 +17,7 @@
   
   "dependencies": {
     "normalize-url": ">=4.5.1",
+    "ws": ">=7.4.6",
     "express": "^4.17.1",
     "fs": "*",
     "nodemon": "^2.0.7",
