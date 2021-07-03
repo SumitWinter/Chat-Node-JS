@@ -1,6 +1,5 @@
 const express = require("express");
 const socket = require("socket.io");
-
 // App setup
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -11,15 +10,15 @@ const server = app.listen(PORT, function () {
 
 app.use(express.urlencoded());
 // Static files
-app.use(express.static("public"))
+app.use(express.static("Public"))
 
-const fs = require("fs");
-const Home = fs.readFileSync('Public/index.html');
+// const fs = require("fs");
+// const Home = fs.readFileSync('Public/index.html');
 
 // Socket setup
 
-app.get("/", (req, res) => {
-    res.status(200).end(Home);
+// app.get("/", (req, res) => {
+//     res.status(200).end(Home);
     const io = socket(server);
 
     const activeUsers = new Set();
@@ -50,4 +49,4 @@ app.get("/", (req, res) => {
             socket.broadcast.emit("sent", data);
         });
     });
-});
+
